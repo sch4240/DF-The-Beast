@@ -225,7 +225,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 6304022}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0.00937}
+  m_LocalPosition: {x: -0, y: -0, z: 0.008}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2146492880}
@@ -240,7 +240,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 0.6698113, g: 0.48724586, b: 0.30647027, a: 1}
+  m_Color: {r: 1, g: 0.5921569, b: 0.16078432, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -280,7 +280,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flickerAmount: 0.15
-  flickerTime: 2.63
+  flickerTimeMax: 1
+  flickerTimeMin: 0.1
 --- !u!1001 &6365586
 Prefab:
   m_ObjectHideFlags: 0
@@ -877,7 +878,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 0.8490566, g: 0.5205492, b: 0.19624422, a: 1}
+  m_Color: {r: 1, g: 0.5921569, b: 0.16078432, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -916,8 +917,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bb4db7e961708947ada27080313010b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flickerAmount: 0.03
-  flickerTime: 1.77
+  flickerAmount: 0.3
+  flickerTimeMax: 1
+  flickerTimeMin: 0.02
 --- !u!1001 &68044207
 Prefab:
   m_ObjectHideFlags: 0
@@ -1059,7 +1061,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 1, g: 0.6884869, b: 0.43867922, a: 1}
+  m_Color: {r: 1, g: 0.5921569, b: 0.16078432, a: 1}
   m_Intensity: 1
   m_Range: 20
   m_SpotAngle: 30
@@ -1098,8 +1100,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bb4db7e961708947ada27080313010b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flickerAmount: 0.05
-  flickerTime: 2.16
+  flickerAmount: 0.1
+  flickerTimeMax: 1
+  flickerTimeMin: 0.02
 --- !u!1 &80553554
 GameObject:
   m_ObjectHideFlags: 0
@@ -2244,8 +2247,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bb4db7e961708947ada27080313010b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flickerAmount: 0.14
-  flickerTime: 1.65
+  flickerAmount: 0.1
+  flickerTimeMax: 2
+  flickerTimeMin: 1
 --- !u!1 &264833238
 GameObject:
   m_ObjectHideFlags: 0
@@ -3156,8 +3160,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bb4db7e961708947ada27080313010b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flickerAmount: 0.15
-  flickerTime: 1.44
+  flickerAmount: 0.1
+  flickerTimeMax: 1
+  flickerTimeMin: 0.05
 --- !u!1 &394194600 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1814605513648322, guid: ef1374e72fe26f141b0cee76a94cebd0,
@@ -6435,7 +6440,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 1, g: 0.7775805, b: 0.6179246, a: 1}
+  m_Color: {r: 1, g: 0.5921569, b: 0.16078432, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -6474,8 +6479,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bb4db7e961708947ada27080313010b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flickerAmount: 0.08
-  flickerTime: 1.48
+  flickerAmount: 0.1
+  flickerTimeMax: 1
+  flickerTimeMin: 0.1
 --- !u!4 &870759806 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 4df135dcff5ef7b488faeec987a0fe1c,
@@ -8287,7 +8293,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 475434, guid: 7d5fac0efe938994aba24a88ba9c3057, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2.62
+      value: -2.18
       objectReference: {fileID: 0}
     - target: {fileID: 475434, guid: 7d5fac0efe938994aba24a88ba9c3057, type: 2}
       propertyPath: m_LocalPosition.z
@@ -8991,7 +8997,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 1, g: 0.7775805, b: 0.6179246, a: 1}
+  m_Color: {r: 1, g: 0.5921569, b: 0.16078432, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -9030,8 +9036,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bb4db7e961708947ada27080313010b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flickerAmount: 0.08
-  flickerTime: 1.76
+  flickerAmount: 0.15
+  flickerTimeMax: 0.5
+  flickerTimeMin: 0.1
 --- !u!1001 &1280082442
 Prefab:
   m_ObjectHideFlags: 0
@@ -9099,7 +9106,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 475434, guid: 7d5fac0efe938994aba24a88ba9c3057, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2.62
+      value: -2.18
       objectReference: {fileID: 0}
     - target: {fileID: 475434, guid: 7d5fac0efe938994aba24a88ba9c3057, type: 2}
       propertyPath: m_LocalPosition.z
@@ -10694,7 +10701,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 1, g: 0.7775805, b: 0.6179246, a: 1}
+  m_Color: {r: 1, g: 0.5921569, b: 0.16078432, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -10733,8 +10740,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bb4db7e961708947ada27080313010b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flickerAmount: 0.13
-  flickerTime: 2.21
+  flickerAmount: 0.2
+  flickerTimeMax: 3
+  flickerTimeMin: 0.4
 --- !u!1 &1550189208
 GameObject:
   m_ObjectHideFlags: 0
@@ -12217,7 +12225,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 1, g: 0.7022472, b: 0.3254717, a: 1}
+  m_Color: {r: 1, g: 0.5921569, b: 0.16078432, a: 1}
   m_Intensity: 0.69
   m_Range: 10
   m_SpotAngle: 30
@@ -12256,8 +12264,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bb4db7e961708947ada27080313010b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flickerAmount: 0.09
-  flickerTime: 1.38
+  flickerAmount: 0.2
+  flickerTimeMax: 1
+  flickerTimeMin: 0.05
 --- !u!1 &1812204783
 GameObject:
   m_ObjectHideFlags: 0
@@ -14205,7 +14214,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 1, g: 0.7775805, b: 0.6179246, a: 1}
+  m_Color: {r: 1, g: 0.5921569, b: 0.16078432, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -14244,8 +14253,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bb4db7e961708947ada27080313010b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flickerAmount: 0.12
-  flickerTime: 1.52
+  flickerAmount: 0.1
+  flickerTimeMax: 4
+  flickerTimeMin: 0.1
 --- !u!1001 &2040321965
 Prefab:
   m_ObjectHideFlags: 0
@@ -14259,7 +14269,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 475434, guid: 7d5fac0efe938994aba24a88ba9c3057, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2.62
+      value: -2.18
       objectReference: {fileID: 0}
     - target: {fileID: 475434, guid: 7d5fac0efe938994aba24a88ba9c3057, type: 2}
       propertyPath: m_LocalPosition.z

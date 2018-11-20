@@ -12,7 +12,8 @@ public class LightFlicker : MonoBehaviour {
     public float flickerAmount;
 
     // time between flickers
-    public float flickerTime;
+    public float flickerTimeMax;
+    public float flickerTimeMin;
 
 	// Use this for initialization
 	void Start () {
@@ -21,7 +22,7 @@ public class LightFlicker : MonoBehaviour {
         intensity = myLight.intensity;
 
         // start flickering
-        flicker();
+        Flicker();
 	}
 	
 	// Update is called once per frame
@@ -30,40 +31,28 @@ public class LightFlicker : MonoBehaviour {
 		
 	}
 
+    // reset the light to it's original intensity
+    void LightReset()
+    {
+        myLight.intensity = intensity;
+    }
+
     // flicker function
-    void flicker()
+    void Flicker()
     {
         // add or subtract to intensity
-        int num = Random.Range(0, 1);
+        float flicker = Random.Range(-flickerAmount, flickerAmount);
 
-        if(num == 0)
-        {
-            // make sure not too intense
-            if (myLight.intensity >= intensity + flickerAmount * 3)
-            {
-                // subtract instead
-                myLight.intensity -= flickerAmount;
-            }
-            else
-            {
-                myLight.intensity += flickerAmount;
-            }
-        }
-        else
-        {
-            // make sure not too light
-            if (myLight.intensity <= intensity - flickerAmount * 3)
-            {
-                // add instead
-                myLight.intensity += flickerAmount;
-            }
-            else
-            {
-                myLight.intensity -= flickerAmount;
-            }
-        }
+        // amount of time to wait
+        float time = Random.Range(flickerTimeMin, flickerTimeMax);
+
+        // change light intensity (The actual flicker)
+        myLight.intensity = intensity + flicker;
+
+        // reset light
+        Invoke("LightReset", time/2);
 
         // call flicker again
-        Invoke("flicker", flickerTime);
+        Invoke("Flicker", time);
     }
 }
