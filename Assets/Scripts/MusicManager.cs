@@ -85,6 +85,7 @@ public class MusicManager : MonoBehaviour
             {
                 sources[i].enabled = true;
                 currentAudio = sources[i];
+                currentAudio.volume = 1.0f;
             }
             else
             {
@@ -116,6 +117,7 @@ public class MusicManager : MonoBehaviour
             {
                 sources[i].enabled = true;
                 currentAudio = sources[i];
+                currentAudio.volume = 1.0f;
             }
             else
             {
