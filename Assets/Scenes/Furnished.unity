@@ -618,6 +618,10 @@ MonoBehaviour:
   bg1: {fileID: 8300000, guid: 7cd240719f6224d48bf353018752700c, type: 3}
   bg2: {fileID: 8300000, guid: c711463a9f81e044da1837e4ef7efe71, type: 3}
   volume: 5
+  sources:
+  - {fileID: 1679505520}
+  - {fileID: 338038930}
+  - {fileID: 1623821608}
 --- !u!1 &20495556
 GameObject:
   m_ObjectHideFlags: 0
@@ -7570,7 +7574,7 @@ Transform:
   - {fileID: 1990799622}
   - {fileID: 19045745}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &962172991
 Prefab:
@@ -11419,7 +11423,7 @@ Transform:
   m_LocalScale: {x: 0.43992, y: 0.022966625, z: 0.55461}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: -294.068, z: 0}
 --- !u!1 &1581801735
 GameObject:
