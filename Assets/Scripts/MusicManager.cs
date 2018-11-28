@@ -10,18 +10,21 @@ public class MusicManager : MonoBehaviour
     public AudioClip bg1;
     public AudioClip bg2;
 
-    // volume to play at
-    public float volume = 5;
-
     // the audio source
     public AudioSource[] sources;
 
     // current audio source
     private AudioSource currentAudio;
 
+    // volume at start
+    float volumeStart = 1;
+
     // Use this for initialization
     void Start()
     {
+        // get the start volume
+        volumeStart = sources[0].GetComponent<AudioSource>().volume;
+
         // start the audio
         StartZero();
     }
@@ -53,7 +56,7 @@ public class MusicManager : MonoBehaviour
             {
                 sources[i].enabled = true;
                 currentAudio = sources[i];
-                currentAudio.volume = 1.0f;
+                currentAudio.volume = volumeStart;
             }
             else
             {
@@ -85,7 +88,7 @@ public class MusicManager : MonoBehaviour
             {
                 sources[i].enabled = true;
                 currentAudio = sources[i];
-                currentAudio.volume = 1.0f;
+                currentAudio.volume = volumeStart;
             }
             else
             {
@@ -117,7 +120,7 @@ public class MusicManager : MonoBehaviour
             {
                 sources[i].enabled = true;
                 currentAudio = sources[i];
-                currentAudio.volume = 1.0f;
+                currentAudio.volume = volumeStart;
             }
             else
             {
