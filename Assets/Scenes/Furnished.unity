@@ -6718,6 +6718,14 @@ Prefab:
       propertyPath: m_Name
       value: BedroomDoor
       objectReference: {fileID: 0}
+    - target: {fileID: 4110734464189126, guid: ef1374e72fe26f141b0cee76a94cebd0, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4110734464189126, guid: ef1374e72fe26f141b0cee76a94cebd0, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef1374e72fe26f141b0cee76a94cebd0, type: 2}
   m_IsPrefabAsset: 0
@@ -17684,6 +17692,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4110734464189126, guid: ef1374e72fe26f141b0cee76a94cebd0,
     type: 2}
   m_PrefabInternal: {fileID: 601311512}
+--- !u!95 &1319690504
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1319690499}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: eab7e6aefa487334b96187996ea4bd89, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1322033839
 Prefab:
   m_ObjectHideFlags: 0
