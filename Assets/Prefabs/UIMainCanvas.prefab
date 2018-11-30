@@ -27,7 +27,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1017681766136156
 GameObject:
   m_ObjectHideFlags: 0
@@ -237,7 +237,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1186386920680184
 GameObject:
   m_ObjectHideFlags: 1
@@ -777,7 +777,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1599406757129630
 GameObject:
   m_ObjectHideFlags: 1
@@ -1773,7 +1773,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Victim last seen on July 10th in her cabin by John Doe. Missing Report
-    filed on July 13th, 9:15pm. \n\nPrimary Suspect: John Doe\nRelationship: Older
+    filed on July 13th, 9:15pm. \n\nPrimary Suspect: Alex Miller\nRelationship: Older
     Brother"
 --- !u!114 &114133802384279136
 MonoBehaviour:
@@ -2063,7 +2063,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Name: Jane Doe
+  m_Text: 'Name: Laura Miller
 
     Species: Human
 
