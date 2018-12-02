@@ -651,6 +651,7 @@ MonoBehaviour:
   - {fileID: 1679505520}
   - {fileID: 338038930}
   - {fileID: 1623821608}
+  volumeMin: 0.2
 --- !u!1 &20495556
 GameObject:
   m_ObjectHideFlags: 0
