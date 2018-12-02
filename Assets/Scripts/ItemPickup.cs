@@ -2,6 +2,8 @@
 
 public class ItemPickup : InteractableItemBase {
 
+	public ItemBase item;
+
 	public override void Interact()
 	{
 		//base.Interact();
@@ -11,8 +13,8 @@ public class ItemPickup : InteractableItemBase {
 
 	void Pickup()
 	{
-		Debug.Log("Picking Up");
-
+		Debug.Log("Picking Up: "+item.name);
+		Inventory.instance.Add(item);
 		Destroy(gameObject);
 	}
 }
