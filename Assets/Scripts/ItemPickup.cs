@@ -18,7 +18,7 @@ public class ItemPickup : InteractableItemBase {
 
 	void Pickup()
 	{
-		Debug.Log("Picking Up: "+item.name);
+		//Debug.Log("Picking Up: "+item.name);
 		Inventory.instance.Add(item);
 
         // if clue, play sound effect

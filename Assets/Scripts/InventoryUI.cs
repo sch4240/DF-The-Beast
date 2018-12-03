@@ -3,8 +3,10 @@
 public class InventoryUI : MonoBehaviour {
 
 	public Transform itemsParent;
+	public Transform journalParent;
 
 	InventorySlot[] slots;
+	InventorySlot[] journalSlots;
 	Inventory inventory;
 
 	private void Start() {
@@ -12,6 +14,7 @@ public class InventoryUI : MonoBehaviour {
 		inventory.onItemChangedCallback += UpdateUI;
 
 		slots = itemsParent.GetComponentsInChildren<InventorySlot>();
+		journalSlots = journalParent.GetComponentsInChildren<InventorySlot>();
 	}
 
 	void UpdateUI() {
@@ -19,11 +22,11 @@ public class InventoryUI : MonoBehaviour {
 		{
 			if(i<inventory.items.Count)
 			{
-				slots[i].AddItem(inventory.items[i]);
+				journalSlots[i].AddItem(inventory.items[i]);
 			}
 			else
 			{
-				slots[i].ClearSlot();
+				journalSlots[i].ClearSlot();
 			}
 		}
 	}

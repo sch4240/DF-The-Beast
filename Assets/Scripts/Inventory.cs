@@ -23,7 +23,7 @@ public class Inventory : MonoBehaviour {
 	
 	
 	public bool Add(ItemBase item)
-	{
+	{	
 		items.Add(item);
 
 		if(onItemChangedCallback!=null)

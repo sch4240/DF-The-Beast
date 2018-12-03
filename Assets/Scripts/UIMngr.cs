@@ -54,6 +54,7 @@ public class UIMngr : MonoBehaviour
     private bool audioOn;
     private GameObject previous;
 
+    private GameObject fpsController;
 
     // Use this for initialization
     void Start ()
@@ -63,7 +64,7 @@ public class UIMngr : MonoBehaviour
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = true;
         //Disable the FPS to enable the cursor for GUI
-        GameObject.Find("FPSController").GetComponent<FirstPersonController>().enabled = false;
+        GameObject.FindWithTag("FPSController").GetComponent<FirstPersonController>().enabled = false;
         hud.SetActive(false);
         //options.SetActive(false);
         caseFile.SetActive(false);
@@ -79,14 +80,14 @@ public class UIMngr : MonoBehaviour
             hud.SetActive(!caseFile.active);
             if (caseFile.active)
             {
-                GameObject.Find("FPSController").GetComponent<FirstPersonController>().enabled = false;
+                GameObject.FindWithTag("FPSController").GetComponent<FirstPersonController>().enabled = false;
                 Cursor.lockState = CursorLockMode.None;
                 //Cursor.lockState = CursorLockMode.Confined;
                 Cursor.visible = true;
             }
             else
             {
-                GameObject.Find("FPSController").GetComponent<FirstPersonController>().enabled = true;
+                GameObject.FindWithTag("FPSController").GetComponent<FirstPersonController>().enabled = true;
             }
         }
     }
@@ -154,7 +155,7 @@ public class UIMngr : MonoBehaviour
         //options.SetActive(false);
         mainMenu.SetActive(false);
         //Enable the mouse to be locked
-        GameObject.Find("FPSController").GetComponent<FirstPersonController>().enabled = true;
+        GameObject.FindWithTag("FPSController").GetComponent<FirstPersonController>().enabled = true;
         // get reference to music manager and switch music loop
 
     }
