@@ -1,10 +1,13 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class RaycastController : MonoBehaviour {
 
 	public LayerMask interactLayer;
 
 	public InteractableItemBase focus;
+
+	public Text pressF;
 
 	public bool isObjectFocused = false; // true when any object is being focused.
 	Camera cam;
@@ -25,15 +28,18 @@ public class RaycastController : MonoBehaviour {
 		{
 			// /Debug.Log("Hitting!!!!");
 			InteractableItemBase interactable = hit.collider.GetComponent<InteractableItemBase>();
-			if(interactable!=null&&Input.GetKeyDown(KeyCode.F))
+			if(interactable!=null)
 			{
-				SetFocus(interactable);
+				pressF.enabled = true;
+				if(Input.GetKeyDown(KeyCode.F))
+					SetFocus(interactable);
 				//Debug.Log(interactable.name);
 			}
 
 		}
 		else
 		{
+			pressF.enabled = false;
 			RemoveFocus();
 			//Debug.Log("Not Focused");
 		}
