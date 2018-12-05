@@ -2141,6 +2141,31 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4110734464189126, guid: ef1374e72fe26f141b0cee76a94cebd0,
     type: 2}
   m_PrefabInternal: {fileID: 1649837650}
+--- !u!114 &143604451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 143604446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89cc73f371feda74883b3af305939597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!111 &143604452
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 143604446}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 9987278c0658fe14daee12296144808c, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!4 &150001225 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 66e6284526c4a2645a28827f82a71cfd,
@@ -17760,24 +17785,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4110734464189126, guid: ef1374e72fe26f141b0cee76a94cebd0,
     type: 2}
   m_PrefabInternal: {fileID: 601311512}
---- !u!95 &1319690504
-Animator:
-  serializedVersion: 3
+--- !u!111 &1319690504
+Animation:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1319690499}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a2162786f4894bd4fb3f393386b3ad00, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 414c669f01c8fee45905fb304e3cabf4, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 414c669f01c8fee45905fb304e3cabf4, type: 2}
+  - {fileID: 7400000, guid: 147f247d6eb93e44f8fc3dea53ec561f, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!114 &1319690505
 MonoBehaviour:
   m_ObjectHideFlags: 0
