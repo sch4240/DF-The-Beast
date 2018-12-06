@@ -18,15 +18,32 @@ public class InventoryUI : MonoBehaviour {
 	}
 
 	void UpdateUI() {
-		for(int i=0;i<slots.Length;i++)
+		// for(int i=0;i<slots.Length;i++)
+		// {
+		// 	if(i<inventory.items.Count)
+		// 	{
+		// 		journalSlots[i].AddItem(inventory.items[i]);
+		// 	}
+		// 	else
+		// 	{
+		// 		journalSlots[i].ClearSlot();
+		// 	}
+		// }
+
+		int clueCount = 0;
+		int diaryCount = 0;
+		for(int i=0;i<inventory.items.Count;i++)
 		{
-			if(i<inventory.items.Count)
+			if(inventory.items[i].tag == "ClueObject")
 			{
-				journalSlots[i].AddItem(inventory.items[i]);
+				Debug.Log("here");
+				slots[clueCount].AddItem(inventory.items[i]);
+				clueCount++;
 			}
-			else
+			else if(inventory.items[i].tag =="DiaryEntry")
 			{
-				journalSlots[i].ClearSlot();
+				journalSlots[diaryCount].AddItem(inventory.items[i]);
+				diaryCount++;
 			}
 		}
 	}
