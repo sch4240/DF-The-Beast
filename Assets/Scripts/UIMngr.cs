@@ -60,7 +60,7 @@ public class UIMngr : MonoBehaviour
     //public SpellSOList spellCheckmarks;
     private bool audioOn;
     private GameObject previous;
-
+    public GameObject monster;
     private GameObject fpsController;
 
     // Use this for initialization
@@ -99,6 +99,7 @@ public class UIMngr : MonoBehaviour
             {
                 GameObject.FindWithTag("FPSController").GetComponent<FirstPersonController>().enabled = true;
             }
+
         }
     }
     //go between profile, inventory and bestiary
@@ -270,20 +271,19 @@ public class UIMngr : MonoBehaviour
         winScreen.SetActive(true);
     }
     //modify the texture to the chosen monster's image
-    //not working at the moment
     public void changeImage()
     {
         string name = getBeast();
-        //if (name != null)
-        //{
-        //    Texture changedTexture = (Texture)Resources.Load(name, typeof(Texture));
-        //    if(changedTexture !=null)
-        //    {
-        //        GameObject.Find("PickedMonster").GetComponent<RawImage>().texture = changedTexture;
-        //    }
+        if (name != null)
+        {
+            Texture changedTexture = (Texture)Resources.Load(name, typeof(Texture));
+            if (changedTexture != null)
+            {
+                monster.GetComponent<RawImage>().texture = changedTexture;
+            }
 
-        //}
-     
+        }
+
     }
     #region Options Menu
     //Toggles the options menu
