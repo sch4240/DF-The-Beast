@@ -10694,7 +10694,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_MouseLook.lockCursor
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_FootstepSounds.Array.data[2]
@@ -12494,11 +12494,6 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224508824801069004, guid: 9ee453691dba1c44682f8c1e8ef6f29f,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: -4.9999924
       objectReference: {fileID: 0}
     - target: {fileID: 1592652144821560, guid: 9ee453691dba1c44682f8c1e8ef6f29f, type: 2}
       propertyPath: m_IsActive
@@ -20425,7 +20420,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 9c88fba643b31104db9ec02370f8575d, type: 2}
+  - {fileID: 2100000, guid: a11f50c88a6854f4c99b3c545bd42928, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
