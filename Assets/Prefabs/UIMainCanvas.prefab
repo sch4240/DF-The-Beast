@@ -169,6 +169,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1063015840344498
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224297752266871176}
+  - component: {fileID: 222020105626237826}
+  - component: {fileID: 114233006813212316}
+  m_Layer: 5
+  m_Name: monsterText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1070348845591754
 GameObject:
   m_ObjectHideFlags: 1
@@ -185,7 +202,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1080260775590328
 GameObject:
   m_ObjectHideFlags: 1
@@ -1379,7 +1396,7 @@ GameObject:
   - component: {fileID: 222526379532009546}
   - component: {fileID: 114132113748804596}
   m_Layer: 5
-  m_Name: ConfirmationText
+  m_Name: pickedText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1539,7 +1556,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1586098712356342
 GameObject:
   m_ObjectHideFlags: 1
@@ -1668,7 +1685,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1615184732721774
 GameObject:
   m_ObjectHideFlags: 1
@@ -2118,6 +2135,23 @@ GameObject:
   - component: {fileID: 114472621127977126}
   m_Layer: 5
   m_Name: ButtonsPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1889500508241542
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224717128217600140}
+  - component: {fileID: 222192466547139044}
+  - component: {fileID: 114894795554324246}
+  m_Layer: 5
+  m_Name: ConfirmationText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3152,7 +3186,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Did a white vampire kill Laura Miller?
+          m_StringArgument: Did a white court vampire kill Laura Miller?
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 114517710545764494}
@@ -3175,6 +3209,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114233006813212316}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: White Court Vampire
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -3409,14 +3454,14 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 18
-    m_MaxSize: 30
+    m_MaxSize: 23
     m_Alignment: 4
     m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Yes/No Text
+  m_Text: 'You picked:'
 --- !u!114 &114133802384279136
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3559,6 +3604,28 @@ MonoBehaviour:
           m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114233006813212316}
+        m_MethodName: set_name
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Phobophages
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114894795554324246}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Correct! You discover a phobophage.
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -3976,7 +4043,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: White Vampire
+  m_Text: White Court Vampire
 --- !u!114 &114194915132653464
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4291,6 +4358,39 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
   m_ChildControlHeight: 1
+--- !u!114 &114233006813212316
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1063015840344498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 33c7d35c350090b4cbf0639d2ef4040a, type: 3}
+    m_FontSize: 18
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 18
+    m_MaxSize: 23
+    m_Alignment: 4
+    m_AlignByGeometry: 1
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: monster
 --- !u!114 &114233933902795062
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4377,7 +4477,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Red Vampire
+  m_Text: Red Court Vampire
 --- !u!114 &114244422744635890
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5223,6 +5323,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 114233006813212316}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Old One
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114409138981967790
@@ -5541,7 +5652,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Red Vampire
+  m_Text: Red Court Vampire
 --- !u!114 &114429258431647188
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5574,7 +5685,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Red Vampire
+  m_Text: Red Court Vampire
 --- !u!114 &114434164187385828
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5659,7 +5770,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: White Vampire
+  m_Text: White Court Vampire
 --- !u!114 &114441229939410460
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6370,7 +6481,7 @@ MonoBehaviour:
   decisionChoice: {fileID: 1181747333842822}
   decisionInventory: {fileID: 1806598714482118}
   decisionBestiary: {fileID: 1013486347020996}
-  beasts: 
+  beasts: 00000000000000
   pickedBeast: 0
   monster: {fileID: 1705471515014582}
 --- !u!114 &114520544929623288
@@ -6730,7 +6841,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.10980393, g: 0.10980393, b: 0.10980393, a: 1}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 1}
     m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 2
@@ -7691,6 +7802,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 114233006813212316}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Grendelkin
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114713626421628606
@@ -7904,6 +8026,17 @@ MonoBehaviour:
           m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114233006813212316}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Skin Walker
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -8475,7 +8608,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: White Vampire
+  m_Text: White Court Vampire
 --- !u!114 &114882774652469972
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8519,6 +8652,40 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114894795554324246
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1889500508241542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 33c7d35c350090b4cbf0639d2ef4040a, type: 3}
+    m_FontSize: 18
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 18
+    m_MaxSize: 30
+    m_Alignment: 4
+    m_AlignByGeometry: 1
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: 'Unfortunately, you chose the wrong the supernatural being. It was actually
+    a phobophage. '
 --- !u!114 &114897516991606912
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8566,7 +8733,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Did a red vampire kill Laura Miller?
+          m_StringArgument: Did a red court vampire kill Laura Miller?
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 114517710545764494}
@@ -8589,6 +8756,17 @@ MonoBehaviour:
           m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114233006813212316}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Red Court Vampire
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -8992,6 +9170,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 114233006813212316}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Rawhead
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114964950218245272
@@ -9333,6 +9522,13 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1059790019874880}
   m_CullTransparentMesh: 0
+--- !u!222 &222020105626237826
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1063015840344498}
+  m_CullTransparentMesh: 0
 --- !u!222 &222020624617533040
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -9486,6 +9682,13 @@ CanvasRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1126623942683424}
+  m_CullTransparentMesh: 0
+--- !u!222 &222192466547139044
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1889500508241542}
   m_CullTransparentMesh: 0
 --- !u!222 &222202775403957544
 CanvasRenderer:
@@ -10671,7 +10874,7 @@ RectTransform:
   m_Children:
   - {fileID: 224292487380060930}
   m_Father: {fileID: 224379661844902874}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -11275,12 +11478,12 @@ RectTransform:
   - {fileID: 224652593716478760}
   - {fileID: 224649940666373712}
   m_Father: {fileID: 224379661844902874}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.35585347, y: 0.102000006}
-  m_AnchorMax: {x: 0.92576724, y: 0.79183364}
-  m_AnchoredPosition: {x: 0.80000305, y: 0.1000061}
-  m_SizeDelta: {x: -0.5, y: -2.699997}
+  m_AnchorMin: {x: 0.36338797, y: 0.102000006}
+  m_AnchorMax: {x: 0.92576724, y: 0.64658237}
+  m_AnchoredPosition: {x: 0.8999939, y: 2.899994}
+  m_SizeDelta: {x: -0.8000002, y: 2.9000015}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224292487380060930
 RectTransform:
@@ -11299,6 +11502,24 @@ RectTransform:
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224297752266871176
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1063015840344498}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224379661844902874}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -294.47, y: -54.445}
+  m_SizeDelta: {x: -699.23, y: -474.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224311257871729858
 RectTransform:
@@ -11537,7 +11758,9 @@ RectTransform:
   m_Children:
   - {fileID: 224367769981202216}
   - {fileID: 224919415928912056}
+  - {fileID: 224717128217600140}
   - {fileID: 224508824801069004}
+  - {fileID: 224297752266871176}
   - {fileID: 224285157852448402}
   - {fileID: 224077272437562420}
   m_Father: {fileID: 224134859345579052}
@@ -11902,12 +12125,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 224379661844902874}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 131.53, y: -5}
-  m_SizeDelta: {x: -399.5, y: -474.5}
+  m_AnchoredPosition: {x: -294.47, y: 195.33}
+  m_SizeDelta: {x: -699.23, y: -474.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224515193007418214
 RectTransform:
@@ -12261,8 +12484,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 264.19, y: -265.63965}
-  m_SizeDelta: {x: 508.38, y: 163.09311}
+  m_AnchoredPosition: {x: 260.544, y: -213.00645}
+  m_SizeDelta: {x: 501.088, y: 128.0043}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224651561532404216
 RectTransform:
@@ -12317,8 +12540,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 264.19, y: -92.046555}
-  m_SizeDelta: {x: 508.38, y: 164.09311}
+  m_AnchoredPosition: {x: 260.544, y: -74.50215}
+  m_SizeDelta: {x: 501.088, y: 129.0043}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224656087411217276
 RectTransform:
@@ -12529,6 +12752,24 @@ RectTransform:
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 9.5, y: 199}
   m_SizeDelta: {x: -336, y: -412.1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224717128217600140
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1889500508241542}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224379661844902874}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 131.53, y: 163.13}
+  m_SizeDelta: {x: -399.5, y: -410.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224721977402013906
 RectTransform:

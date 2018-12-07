@@ -264,6 +264,7 @@ public class UIMngr : MonoBehaviour
         beastDictionary.Add(5, "skinwalkerColor");
         beastDictionary.Add(6, "oldOneColor");
     }
+    //once the player makes the final decision turn on the win panel
     public void toggleDecisionPanel()
     {
         changeImage();
