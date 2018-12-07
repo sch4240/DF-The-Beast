@@ -9,8 +9,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98c752085f5c1384ab920f0384b4dca4, type: 3}
-  m_Name: Book3
+  m_Name: Key1
   m_EditorClassIdentifier: 
-  name: 'Journal Entry #3'
-  icon: {fileID: 21300000, guid: 92bda146147ab60449965f49c4220fca, type: 3}
-  tag: JournalEntry
+  name: Key_01
+  icon: {fileID: 21300000, guid: 9d7c6e4896067aa4fa512a00f692ac1c, type: 3}
+  tag: ClueObject

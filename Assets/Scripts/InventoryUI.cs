@@ -39,7 +39,7 @@ public class InventoryUI : MonoBehaviour {
 				slots[clueCount].AddItem(inventory.items[i]);
 				clueCount++;
 			}
-			else if(inventory.items[i].tag =="DiaryEntry")
+			else if(inventory.items[i].tag =="JournalEntry")
 			{
 				journalSlots[diaryCount].AddItem(inventory.items[i]);
 				diaryCount++;

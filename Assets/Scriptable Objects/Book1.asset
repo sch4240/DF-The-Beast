@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98c752085f5c1384ab920f0384b4dca4, type: 3}
   m_Name: Book1
   m_EditorClassIdentifier: 
-  name: Book_1
-  icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  tag: ClueObject
+  name: 'Journal Entry #1'
+  icon: {fileID: 21300000, guid: 92bda146147ab60449965f49c4220fca, type: 3}
+  tag: JournalEntry
