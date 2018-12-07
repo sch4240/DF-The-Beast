@@ -8,6 +8,7 @@ TagManager:
   - ClueObjects
   - DiaryEntry
   - Instructions
+  - Door
   layers:
   - Default
   - TransparentFX
