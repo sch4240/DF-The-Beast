@@ -36,7 +36,6 @@ public class InventoryUI : MonoBehaviour {
 		{
 			if(inventory.items[i].tag == "ClueObject")
 			{
-				Debug.Log("here");
 				slots[clueCount].AddItem(inventory.items[i]);
 				clueCount++;
 			}
