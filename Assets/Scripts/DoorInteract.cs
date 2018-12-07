@@ -16,8 +16,13 @@ public class DoorInteract : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
+        CheckDoor();
+    }
+
+    void CheckDoor()
+    {
         // open/close door on F
-        if(Input.GetKeyDown(KeyCode.F) == true)
+        if (Input.GetKeyDown(KeyCode.F) == true)
         {
             // create raycast
             Ray ray = new Ray(transform.position, transform.forward);
@@ -25,9 +30,9 @@ public class DoorInteract : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit, interactDistance))
             {
-                if(hit.collider.CompareTag("Door"))
+                if (hit.collider.CompareTag("Door"))
                 {
-                    if(hit.collider.GetComponent<AnimScript>().ifOpen)
+                    if (hit.collider.GetComponent<AnimScript>().ifOpen)
                     {
                         hit.collider.GetComponent<AnimScript>().CloseDoor();
                     }
