@@ -18,12 +18,16 @@ public class AnimScript : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.O) == true && ifOpen == false)
         {
             anim.Play("Door Open");
+            anim.Play("BathOpen");
+            anim.Play("CellarOpen");
             ifOpen = true;
         }
 
         if (Input.GetKeyDown(KeyCode.C) == true && ifOpen==true)
         {
             anim.Play("Door Anim");
+            anim.Play("BathClose");
+            anim.Play("CellarClose");
             ifOpen = false;
         }
     }
