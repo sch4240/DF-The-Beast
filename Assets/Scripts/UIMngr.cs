@@ -63,6 +63,10 @@ public class UIMngr : MonoBehaviour
     public GameObject monster;
     private GameObject fpsController;
 
+    // on boarding instructions
+    bool caseFileInstruct;
+    public GameObject caseFileText;
+
     // Use this for initialization
     void Start ()
     {
@@ -80,12 +84,21 @@ public class UIMngr : MonoBehaviour
         audioOn = true;
         beasts = new bool[7];
         setDictionary();
+
+        caseFileInstruct = true;
     }
     //check for keypress "c" to open and close the casefile
     public void Update()
     {
         if (Input.GetKeyDown("c"))
         {
+            // disable text on first time pressing 'C'
+            if (caseFileInstruct)
+            {
+                caseFileText.GetComponent<Text>().enabled = false;
+                caseFileInstruct = false;
+            }
+
             caseFile.SetActive(!caseFile.active);
             hud.SetActive(!caseFile.active);
             if (caseFile.active)

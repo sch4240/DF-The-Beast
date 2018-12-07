@@ -4913,15 +4913,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 486626, guid: a20500e423bae0d4791817758e9798cf, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 2.859
+      value: 2.826
       objectReference: {fileID: 0}
     - target: {fileID: 486626, guid: a20500e423bae0d4791817758e9798cf, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.229
+      value: 1.231
       objectReference: {fileID: 0}
     - target: {fileID: 486626, guid: a20500e423bae0d4791817758e9798cf, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -0.235
+      value: -2.031
       objectReference: {fileID: 0}
     - target: {fileID: 486626, guid: a20500e423bae0d4791817758e9798cf, type: 2}
       propertyPath: m_LocalRotation.x
@@ -10696,7 +10696,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_MouseLook.lockCursor
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_FootstepSounds.Array.data[2]
@@ -11894,7 +11894,9 @@ MonoBehaviour:
   creak: {fileID: 8300000, guid: 7540e437784eacb4e8614cf4be95921c, type: 3}
   newClue: {fileID: 8300000, guid: 9c3d852ca47a52a47b8ab4b720ee73a9, type: 3}
   strangeSound: {fileID: 8300000, guid: ab23e5da799bab84d82ce43bf40090fb, type: 3}
-  volume: 5
+  creakVolume: 1
+  newClueVolume: 5
+  strangeSoundVolume: 5
 --- !u!82 &1164547682
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12497,18 +12499,40 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224508824801069004, guid: 9ee453691dba1c44682f8c1e8ef6f29f,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: -4.9999924
-      objectReference: {fileID: 0}
     - target: {fileID: 1592652144821560, guid: 9ee453691dba1c44682f8c1e8ef6f29f, type: 2}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1179874826283352, guid: 9ee453691dba1c44682f8c1e8ef6f29f, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1521904120539744, guid: 9ee453691dba1c44682f8c1e8ef6f29f, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224378732978549340, guid: 9ee453691dba1c44682f8c1e8ef6f29f,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -4.2589507
+      objectReference: {fileID: 0}
+    - target: {fileID: 1613359086401658, guid: 9ee453691dba1c44682f8c1e8ef6f29f, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114517710545764494, guid: 9ee453691dba1c44682f8c1e8ef6f29f,
+        type: 2}
+      propertyPath: caseFileText
+      value: 
+      objectReference: {fileID: 1252745542}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ee453691dba1c44682f8c1e8ef6f29f, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1252745542 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1930310915710274, guid: 9ee453691dba1c44682f8c1e8ef6f29f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1252745541}
 --- !u!1 &1259672444
 GameObject:
   m_ObjectHideFlags: 0
@@ -20427,7 +20451,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 9c88fba643b31104db9ec02370f8575d, type: 2}
+  - {fileID: 2100000, guid: a11f50c88a6854f4c99b3c545bd42928, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29764,7 +29788,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2041575273}
   - component: {fileID: 2041575272}
-  - component: {fileID: 2041575271}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -29772,13 +29795,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &2041575271
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2041575270}
-  m_Enabled: 1
 --- !u!20 &2041575272
 Camera:
   m_ObjectHideFlags: 0

@@ -11,7 +11,9 @@ public class SoundEffectManager : MonoBehaviour
     public AudioClip strangeSound;
 
     // volume to play at
-    public float volume = 5;
+    public float creakVolume = 1;
+    public float newClueVolume = 5;
+    public float strangeSoundVolume = 5;
 
     // the audio source
     private AudioSource source;
@@ -26,18 +28,18 @@ public class SoundEffectManager : MonoBehaviour
     // play door creaking
     public void PlayCreak()
     {
-        source.PlayOneShot(creak, volume);
+        source.PlayOneShot(creak, creakVolume);
     }
 
     // play new clue sound (writing something in journal)
     public void PlayNewClue()
     {
-        source.PlayOneShot(newClue, volume);
+        source.PlayOneShot(newClue, newClueVolume);
     }
 
     // play strange sound
     public void PlayStrangeSound()
     {
-        source.PlayOneShot(strangeSound, volume);
+        source.PlayOneShot(strangeSound, strangeSoundVolume);
     }
 }
