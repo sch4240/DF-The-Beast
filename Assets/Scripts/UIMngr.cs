@@ -299,6 +299,11 @@ public class UIMngr : MonoBehaviour
         }
 
     }
+    //when the player hits the 'X' button on a journal
+    public void toggleJournal(GameObject journalEntry)
+    {
+        journalEntry.SetActive(false);
+    }
     #region Options Menu
     //Toggles the options menu
     public void ToggleOptions()
