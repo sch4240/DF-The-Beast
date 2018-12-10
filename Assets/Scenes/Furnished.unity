@@ -4436,7 +4436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89cc73f371feda74883b3af305939597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ifOpen: 1
+  ifOpen: 0
   interactDistance: 5
   animationOpenName: CellarOpen
   animationCloseName: CellarClose
@@ -6650,7 +6650,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4110734464189126, guid: ef1374e72fe26f141b0cee76a94cebd0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.51
+      value: 2.36
       objectReference: {fileID: 0}
     - target: {fileID: 4110734464189126, guid: ef1374e72fe26f141b0cee76a94cebd0, type: 2}
       propertyPath: m_LocalPosition.y
@@ -6658,23 +6658,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4110734464189126, guid: ef1374e72fe26f141b0cee76a94cebd0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 5.29
+      value: 8.09
       objectReference: {fileID: 0}
     - target: {fileID: 4110734464189126, guid: ef1374e72fe26f141b0cee76a94cebd0, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4110734464189126, guid: ef1374e72fe26f141b0cee76a94cebd0, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4110734464189126, guid: ef1374e72fe26f141b0cee76a94cebd0, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4110734464189126, guid: ef1374e72fe26f141b0cee76a94cebd0, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4110734464189126, guid: ef1374e72fe26f141b0cee76a94cebd0, type: 2}
       propertyPath: m_RootOrder
@@ -6682,7 +6682,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4110734464189126, guid: ef1374e72fe26f141b0cee76a94cebd0, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 4110734464189126, guid: ef1374e72fe26f141b0cee76a94cebd0, type: 2}
       propertyPath: m_LocalScale.x
@@ -9594,7 +9594,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4110734464189126, guid: ef1374e72fe26f141b0cee76a94cebd0, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 92.99221
+      value: 180.993
       objectReference: {fileID: 0}
     - target: {fileID: 4110734464189126, guid: ef1374e72fe26f141b0cee76a94cebd0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -9602,27 +9602,27 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4110734464189126, guid: ef1374e72fe26f141b0cee76a94cebd0, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.90768963
+      value: 0.99996245
       objectReference: {fileID: 0}
     - target: {fileID: 4110734464189126, guid: ef1374e72fe26f141b0cee76a94cebd0, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4110734464189126, guid: ef1374e72fe26f141b0cee76a94cebd0, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.41964218
+      value: -0.008665235
       objectReference: {fileID: 0}
     - target: {fileID: 4110734464189126, guid: ef1374e72fe26f141b0cee76a94cebd0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.069
+      value: -0.12
       objectReference: {fileID: 0}
     - target: {fileID: 4110734464189126, guid: ef1374e72fe26f141b0cee76a94cebd0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -17.129
+      value: -17.15
       objectReference: {fileID: 0}
     - target: {fileID: 4110734464189126, guid: ef1374e72fe26f141b0cee76a94cebd0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.734
+      value: -1.68
       objectReference: {fileID: 0}
     - target: {fileID: 4110734464189126, guid: ef1374e72fe26f141b0cee76a94cebd0, type: 2}
       propertyPath: m_LocalScale.x
@@ -17758,7 +17758,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89cc73f371feda74883b3af305939597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ifOpen: 1
+  ifOpen: 0
   interactDistance: 5
   animationOpenName: Door Open
   animationCloseName: Door Anim
