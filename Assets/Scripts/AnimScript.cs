@@ -18,7 +18,6 @@ public class AnimScript : MonoBehaviour {
     void Start ()
     {
         anim = GetComponent<Animation>();
-        ifOpen = true;
 
         // get reference to Sound Effect Manager
         SEManager = GameObject.FindObjectOfType<SoundEffectManager>();
