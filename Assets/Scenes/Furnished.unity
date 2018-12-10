@@ -18379,21 +18379,67 @@ Prefab:
     - target: {fileID: 114082450538581566, guid: 9ee453691dba1c44682f8c1e8ef6f29f,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_StringArgument
-      value: Feeds off emotions and life-force, Appears to look more human than a
-        red court vampire.
+      value: This vampire feeds off the emotions and life-force of its victim. In
+        regards to appearance, they look just like an ordinary human. However, they
+        posess asupernatural strength and speed that makes them especially dangerous.
+        They tend to be very cautious whenever they kill a victim and clean up their
+        mess so as not to attract suspicion from the human world.
       objectReference: {fileID: 0}
     - target: {fileID: 114066222389573166, guid: 9ee453691dba1c44682f8c1e8ef6f29f,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_StringArgument
-      value: Slimy bat-like creatures that will disguise themeselves as human. Very
-        fast and animal-like in their true form. Would never let blood go to waste.
+      value: This type of vampire looks like a slimy bat-like creature in its true
+        form. They often will disquise themselves as human when hunting for prey.
+        They are very fast and animal-like in their true form, making them extremely
+        dangerous. While not as calculated or clean as White Court Vampires, Red Court
+        vampires would never let a drop of blood go to waste.
       objectReference: {fileID: 0}
     - target: {fileID: 114303348545657466, guid: 9ee453691dba1c44682f8c1e8ef6f29f,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_StringArgument
-      value: Feeds on fear and magic. Powerful shapeshifters who can take on any form.
-        They often hunt in packs. Appears as a shadowy figure with white eyes in its
-        true form.
+      value: This is a powerful entity that feeds on the fear of its victims and sources
+        of magical power. They are powerful shapeshifters that can take on any form
+        and often will hunt their prey in packs. In their true form, they have been
+        described as shadowy figures with haunting white eyes. They use mirrors as
+        a portal to come to our world from the Nevernever.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114391315259517496, guid: 9ee453691dba1c44682f8c1e8ef6f29f,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_StringArgument
+      value: They are descendants of the ancient creature known as Grendel. They have
+        large fangs and long black fingernails that are used to quickly kill their
+        prey. They can weigh over a quarter ton. To reproduce, a Grendelkin needs
+        a virgin woman and mead. Something in the mead makes a Grendelkin fertile.
+        The grendelkin's offspring grow inside of the virgin and then burst out of
+        their belly in a bloody fashion.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114429675542325476, guid: 9ee453691dba1c44682f8c1e8ef6f29f,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_StringArgument
+      value: These creatures assemble themselves out of the flesh and bones of slaughtered
+        hogs. After coming into existence, the Rawhead will then begin to assimilate
+        the flesh and bones of any creatures it can catch into its own body, gradually
+        growing in size. If not dealt with immediately, a rawhead can grow into a
+        beast capable of killing and assimilating full-grown humans.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114666474939664516, guid: 9ee453691dba1c44682f8c1e8ef6f29f,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_StringArgument
+      value: 'Also known as Naagloshii, the skinwalker is a powerful shapeshifter
+        that becomes more powerful as their victims grow more fearful. They have a
+        horrific psychic stench that humans unaware of magic describe as getting the
+        heebie jeebies. To change shapes, the skinwalker will kill a creature and
+        then steal its skin to wear as its own. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114736988527580022, guid: 9ee453691dba1c44682f8c1e8ef6f29f,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_StringArgument
+      value: Not much is known about the old ones besides the fact they are a race
+        of very ancient beings. They feed on the psychic energy that is produced by
+        humanity's fear and awareness of them. To strip their power away from them,
+        the Venatori sought to wipe out any reference to the Old Ones in text so that
+        the knowledge of their existence would eventually die out in the Oblivion
+        War.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ee453691dba1c44682f8c1e8ef6f29f, type: 2}
