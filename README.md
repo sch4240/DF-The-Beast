@@ -9,3 +9,6 @@
 - **Books** by VIS Games - https://assetstore.unity.com/packages/3d/props/interior/books-3356
 - **Old Radio "Alpinist"** by IL.ranch -https://assetstore.unity.com/packages/3d/props/interior/old-radio-alpinist-72991
 - **Handpainted Keys** by RoboCG - https://assetstore.unity.com/packages/3d/handpainted-keys-42044
+- **Stellar Sky** by Wolfniey - https://assetstore.unity.com/packages/2d/textures-materials/sky/stellar-sky-99558
+- **Simple Wall Lamp** by FlatRiver - https://assetstore.unity.com/packages/3d/props/simple-wall-lamp-69411
+- **Lamp Model** by HarpetStudio - https://assetstore.unity.com/packages/3d/props/interior/lamp-model-110960
