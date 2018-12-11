@@ -3741,8 +3741,11 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Slimy bat-like creatures that will disguise themeselves
-            as human. Would never let blood go to waste.
+          m_StringArgument: This type of vampire looks like a slimy bat-like creature
+            in its true form. They often will disquise themselves as human when hunting
+            for prey. They are very fast and animal-like in their true form, making
+            them extremely dangerous. While not as calculated or clean as White Court
+            Vampires, Red Court vampires would never let a drop of blood go to waste.
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -3997,8 +4000,12 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 'Feeds off emotions and life-force, Appears to look more
-            human than a red court vampire. '
+          m_StringArgument: This vampire feeds off the emotions and life-force of
+            its victim. In regards to appearance, they look just like an ordinary
+            human. However, they posess asupernatural strength and speed that makes
+            them especially dangerous. They tend to be very cautious whenever they
+            kill a victim and clean up their mess so as not to attract suspicion from
+            the human world.
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -6130,8 +6137,12 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Feeds on fear and magic. Powerful shapeshifters who can
-            take on any form.
+          m_StringArgument: This is a powerful entity that feeds on the fear of its
+            victims and sources of magical power. They are powerful shapeshifters
+            that can take on any form and often will hunt their prey in packs. In
+            their true form, they have been described as shadowy figures with haunting
+            white eyes. They use mirrors as a portal to come to our world from the
+            Nevernever.
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -6828,10 +6839,12 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: A descendant of Grendel. Fangs with long black fingernails,
-            weights over a quarter ton, blood. Needs virign women to reproduce. (Something
-            in mead makes the Grendelkin fertile, grendelkin spawn from the human's
-            belly.)
+          m_StringArgument: They are descendants of the ancient creature known as
+            Grendel. They have large fangs and long black fingernails that are used
+            to quickly kill their prey. They can weigh over a quarter ton. To reproduce,
+            a Grendelkin needs a virgin woman and mead. Something in the mead makes
+            a Grendelkin fertile. The grendelkin's offspring grow inside of the virgin
+            and then burst out of their belly in a bloody fashion.
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -7310,10 +7323,12 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "Assembles itself out of the flesh and bones of slaughtered
-            hogs, then starts to eat whatever it can catch. When it eats, it sort
-            of just adds it\u2019s prey\u2019s flesh to it\u2019s own body, only really
-            leaving behind bones. "
+          m_StringArgument: These creatures assemble themselves out of the flesh and
+            bones of slaughtered hogs. After coming into existence, the Rawhead will
+            then begin to assimilate the flesh and bones of any creatures it can catch
+            into its own body, gradually growing in size. If not dealt with immediately,
+            a rawhead can grow into a beast capable of killing and assimilating full-grown
+            humans.
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -9366,8 +9381,11 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 'As known as Naagloshii. Shapeshifter. More afraid you
-            are, the more powerful they become. They have a horrific psychic stench. '
+          m_StringArgument: 'Also known as Naagloshii, the skinwalker is a powerful
+            shapeshifter that becomes more powerful as their victims grow more fearful.
+            They have a horrific psychic stench that humans unaware of magic describe
+            as getting the heebie jeebies. To change shapes, the skinwalker will kill
+            a creature and then steal its skin to wear as its own. '
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -10054,7 +10072,12 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Ancient race of very powerful beings.
+          m_StringArgument: Not much is known about the old ones besides the fact
+            they are a race of very ancient beings. They feed on the psychic energy
+            that is produced by humanity's fear and awareness of them. To strip their
+            power away from them, the Venatori sought to wipe out any reference to
+            the Old Ones in text so that the knowledge of their existence would eventually
+            die out in the Oblivion War.
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -13267,7 +13290,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -95.134}
+  m_AnchoredPosition: {x: 0, y: -95.13379}
   m_SizeDelta: {x: 188.83, y: -153.72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224010516739973000
@@ -13286,7 +13309,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 755, y: -39.95}
+  m_AnchoredPosition: {x: 755, y: -39.950195}
   m_SizeDelta: {x: 53.7, y: 45.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224017149199863772
@@ -13327,7 +13350,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.8999634, y: 0.0007019043}
+  m_AnchoredPosition: {x: -0.9003906, y: 0.00048828125}
   m_SizeDelta: {x: -174.29987, y: 0.0015869141}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224022536449021990
@@ -13456,8 +13479,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 745.9925, y: -230.75308}
-  m_SizeDelta: {x: 497.32834, y: 461.50616}
+  m_AnchoredPosition: {x: 758.47644, y: -230.75308}
+  m_SizeDelta: {x: 505.65094, y: 461.50616}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224073364384150030
 RectTransform:
@@ -13554,8 +13577,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 144.7483, y: -75.976105}
-  m_SizeDelta: {x: 269.4966, y: 38.00177}
+  m_AnchoredPosition: {x: 152.01814, y: -74.8616}
+  m_SizeDelta: {x: 284.0363, y: 38.353546}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224096635169098350
 RectTransform:
@@ -13572,7 +13595,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 277.2, y: -42.34807}
+  m_AnchoredPosition: {x: 362.7832, y: -49.950195}
   m_SizeDelta: {x: 494.40002, y: 44.696133}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224100546003602652
@@ -13590,7 +13613,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -63, y: 22.7}
+  m_AnchoredPosition: {x: -63, y: 22.700195}
   m_SizeDelta: {x: -182.1, y: -79.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224103783868219234
@@ -13610,7 +13633,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 227.74298, y: -238.79303}
+  m_AnchoredPosition: {x: 227.74316, y: -238.79303}
   m_SizeDelta: {x: 455.48596, y: 477.58606}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224115289847116770
@@ -13628,8 +13651,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 498.86594, y: -23.56}
-  m_SizeDelta: {x: 352.4239, y: 47.12}
+  m_AnchoredPosition: {x: 506.95, y: -23.56}
+  m_SizeDelta: {x: 358.13028, y: 47.12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224117672599045236
 RectTransform:
@@ -13746,8 +13769,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 144.7483, y: -219.98141}
-  m_SizeDelta: {x: 269.4966, y: 38.00177}
+  m_AnchoredPosition: {x: 152.01814, y: -219.92224}
+  m_SizeDelta: {x: 284.0363, y: 38.353546}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224147475067101564
 RectTransform:
@@ -13764,7 +13787,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 805.8111, y: -23.05}
+  m_AnchoredPosition: {x: 805.8115, y: -23.049805}
   m_SizeDelta: {x: 271.9, y: 46.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224148209523532346
@@ -13820,7 +13843,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 5.601532, y: 3.1699219}
+  m_AnchoredPosition: {x: 5.6015625, y: 3.1699219}
   m_SizeDelta: {x: -37.1, y: 136.28}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224151579272110842
@@ -13859,7 +13882,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.6015625, y: -27.101532}
+  m_AnchoredPosition: {x: 0.6015625, y: -27.101562}
   m_SizeDelta: {x: -16.8, y: -69.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224163270034566550
@@ -13877,7 +13900,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 148, y: -23.05}
+  m_AnchoredPosition: {x: 148, y: -23.049805}
   m_SizeDelta: {x: 296, y: 46.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224165564871133730
@@ -13969,8 +13992,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 161.327, y: -23.56}
-  m_SizeDelta: {x: 322.654, y: 47.12}
+  m_AnchoredPosition: {x: 163.94244, y: -23.56}
+  m_SizeDelta: {x: 327.8849, y: 47.12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224188341199629108
 RectTransform:
@@ -14023,7 +14046,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -28, y: 22.700012}
+  m_AnchoredPosition: {x: -28, y: 22.700195}
   m_SizeDelta: {x: -112.1, y: -79.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224226746848524142
@@ -14060,7 +14083,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 755, y: -39.95}
+  m_AnchoredPosition: {x: 755, y: -39.950195}
   m_SizeDelta: {x: 53.7, y: 45.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224247717000796712
@@ -14115,7 +14138,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 5.601532, y: 3.1699219}
+  m_AnchoredPosition: {x: 5.6015625, y: 3.1699219}
   m_SizeDelta: {x: -37.1, y: 136.28}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224249360391856548
@@ -14135,7 +14158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.8999634, y: 0.0007019043}
+  m_AnchoredPosition: {x: -0.9003906, y: 0.00048828125}
   m_SizeDelta: {x: -174.29999, y: 0.0015869141}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224249527820813038
@@ -14252,7 +14275,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -95.134}
+  m_AnchoredPosition: {x: 0, y: -95.13379}
   m_SizeDelta: {x: 188.83, y: -153.72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224278476768550052
@@ -14289,7 +14312,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.07018575, y: 0.015000001}
   m_AnchorMax: {x: 0.9436905, y: 0.85}
-  m_AnchoredPosition: {x: -352.47, y: 35.7}
+  m_AnchoredPosition: {x: -352.46973, y: 35.700195}
   m_SizeDelta: {x: -549.86, y: -116.03}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224285157852448402
@@ -14327,7 +14350,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -3.119995, y: -48.199997}
+  m_AnchoredPosition: {x: -3.1201172, y: -48.200195}
   m_SizeDelta: {x: 176.42, y: -205.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224292487380060930
@@ -14607,7 +14630,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.9000244, y: 0.0008239746}
+  m_AnchoredPosition: {x: -0.9003906, y: 0.0009765625}
   m_SizeDelta: {x: -174.3, y: 0.0016479}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224367769981202216
@@ -14809,7 +14832,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -28, y: 22.700012}
+  m_AnchoredPosition: {x: -28, y: 22.700195}
   m_SizeDelta: {x: -112.1, y: -79.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224435349895407012
@@ -14885,8 +14908,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 248.66417, y: -230.75308}
-  m_SizeDelta: {x: 497.32834, y: 461.50616}
+  m_AnchoredPosition: {x: 252.82547, y: -230.75308}
+  m_SizeDelta: {x: 505.65094, y: 461.50616}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224461061549705964
 RectTransform:
@@ -14958,7 +14981,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.07018575, y: 0.015000001}
   m_AnchorMax: {x: 0.9436905, y: 0.85}
-  m_AnchoredPosition: {x: -352.47, y: 35.7}
+  m_AnchoredPosition: {x: -352.46973, y: 35.700195}
   m_SizeDelta: {x: -549.86, y: -116.03}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224479618205770804
@@ -15014,7 +15037,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -53.3, y: 71.2}
+  m_AnchoredPosition: {x: -26.299805, y: 71.200195}
   m_SizeDelta: {x: -162.6, y: -176.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224492117308363622
@@ -15033,7 +15056,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 755, y: -39.95}
+  m_AnchoredPosition: {x: 755, y: -39.950195}
   m_SizeDelta: {x: 53.7, y: 45.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224493752230250920
@@ -15088,7 +15111,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -51.2, y: 0}
+  m_AnchoredPosition: {x: -51.200195, y: 0}
   m_SizeDelta: {x: -138.4, y: -19.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224508824801069004
@@ -15124,7 +15147,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -3.119995, y: -48.199997}
+  m_AnchoredPosition: {x: -3.1201172, y: -48.200195}
   m_SizeDelta: {x: 176.42, y: -205.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224515193007418214
@@ -15199,7 +15222,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 160.83, y: 2.03}
+  m_AnchoredPosition: {x: 160.83008, y: 2.0297852}
   m_SizeDelta: {x: -666.23, y: -262.26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224528719251360358
@@ -15391,8 +15414,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 144.7483, y: -171.97964}
-  m_SizeDelta: {x: 269.4966, y: 38.00177}
+  m_AnchoredPosition: {x: 152.01814, y: -171.5687}
+  m_SizeDelta: {x: 284.0363, y: 38.353546}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224600415879763576
 RectTransform:
@@ -15526,7 +15549,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 132.43332, y: -381.7695}
+  m_AnchoredPosition: {x: 132.4336, y: -381.7695}
   m_SizeDelta: {x: 244.86664, y: 315.53}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224635885148858260
@@ -15544,7 +15567,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 482.93054, y: -23.05}
+  m_AnchoredPosition: {x: 482.93066, y: -23.049805}
   m_SizeDelta: {x: 281.1, y: 46.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224649940666373712
@@ -15636,8 +15659,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 844.61725, y: -23.56}
-  m_SizeDelta: {x: 339.07877, y: 47.12}
+  m_AnchoredPosition: {x: 858.4085, y: -23.56}
+  m_SizeDelta: {x: 344.7867, y: 47.12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224656135125651314
 RectTransform:
@@ -15789,7 +15812,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.9365518}
   m_AnchorMax: {x: 1, y: 0.9365518}
-  m_AnchoredPosition: {x: 0.5499878, y: -22.51001}
+  m_AnchoredPosition: {x: 0.5498047, y: -22.509766}
   m_SizeDelta: {x: -1.1, y: 47.12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224711479052618914
@@ -15849,7 +15872,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.8703899}
-  m_AnchoredPosition: {x: 0, y: 14.859985}
+  m_AnchoredPosition: {x: 0, y: 14.859863}
   m_SizeDelta: {x: -20.6, y: -43.32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224716999892273376
@@ -16032,8 +16055,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 144.7483, y: -123.977875}
-  m_SizeDelta: {x: 269.4966, y: 38.00177}
+  m_AnchoredPosition: {x: 152.01814, y: -123.21515}
+  m_SizeDelta: {x: 284.0363, y: 38.353546}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224789851179291770
 RectTransform:
@@ -16068,8 +16091,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 144.7483, y: -267.9832}
-  m_SizeDelta: {x: 269.4966, y: 38.00177}
+  m_AnchoredPosition: {x: 152.01814, y: -268.2758}
+  m_SizeDelta: {x: 284.0363, y: 38.353546}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224829023215837384
 RectTransform:
@@ -16105,7 +16128,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 755, y: -39.95}
+  m_AnchoredPosition: {x: 755, y: -39.950195}
   m_SizeDelta: {x: 53.7, y: 45.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224839782808273108
@@ -16160,8 +16183,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 144.7483, y: -312.39203}
-  m_SizeDelta: {x: 269.4966, y: 30.81593}
+  m_AnchoredPosition: {x: 152.01814, y: -312.62628}
+  m_SizeDelta: {x: 284.0363, y: 30.347408}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224857205949263170
 RectTransform:
@@ -16179,7 +16202,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 755, y: -39.95}
+  m_AnchoredPosition: {x: 755, y: -39.950195}
   m_SizeDelta: {x: 53.7, y: 45.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224861163156415684
@@ -16199,7 +16222,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.8999634, y: 0.0007019043}
+  m_AnchoredPosition: {x: -0.9003906, y: 0.00048828125}
   m_SizeDelta: {x: -174.29999, y: 0.0015869141}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224869663445062918
@@ -16220,7 +16243,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 160.83, y: 2.03}
+  m_AnchoredPosition: {x: 160.83008, y: 2.0297852}
   m_SizeDelta: {x: -666.23, y: -262.26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224870680673127998
@@ -16444,7 +16467,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.8999634, y: 0.0007019043}
+  m_AnchoredPosition: {x: -0.9003906, y: 0.00048828125}
   m_SizeDelta: {x: -174.29987, y: 0.0015869141}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224922662050323628
@@ -16498,8 +16521,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 144.7483, y: -28.48761}
-  m_SizeDelta: {x: 269.4966, y: 36.97522}
+  m_AnchoredPosition: {x: 152.01814, y: -27.842415}
+  m_SizeDelta: {x: 284.0363, y: 35.68483}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224930590840569640
 RectTransform:
@@ -16517,7 +16540,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 132.43332, y: -72.389496}
+  m_AnchoredPosition: {x: 132.4336, y: -72.38965}
   m_SizeDelta: {x: 244.86664, y: 45.848}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224943663616274108
