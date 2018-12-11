@@ -8,4 +8,7 @@ public class ItemBase : ScriptableObject
 
 	public string tag = "New Tag";
 
+	[TextArea]
+	public string description = "New Description";
+
 }

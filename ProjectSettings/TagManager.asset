@@ -9,6 +9,9 @@ TagManager:
   - DiaryEntry
   - Instructions
   - Door
+  - iText
+  - iDescription
+  - iSprite
   layers:
   - Default
   - TransparentFX

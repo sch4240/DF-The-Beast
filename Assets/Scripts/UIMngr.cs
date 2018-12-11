@@ -53,6 +53,10 @@ public class UIMngr : MonoBehaviour
     public GameObject decisionChoice;
     public GameObject decisionInventory;
     public GameObject decisionBestiary;
+    public GameObject itemDescriptionScreen;
+
+    [Header("CrossHair")]
+    public GameObject crossHair;
     public Dictionary<int, string> beastDictionary;
     public bool[] beasts;
     public int pickedBeast;
@@ -71,6 +75,7 @@ public class UIMngr : MonoBehaviour
     void Start ()
     {
         mainMenu.SetActive(true);
+        crossHair.SetActive(false);
         Cursor.lockState = CursorLockMode.None;
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = true;
@@ -81,6 +86,7 @@ public class UIMngr : MonoBehaviour
         caseFile.SetActive(false);
         winScreen.SetActive(false);
         decisionScreen.SetActive(false);
+        itemDescriptionScreen.SetActive(false);
         audioOn = true;
         beasts = new bool[7];
         setDictionary();
@@ -99,9 +105,10 @@ public class UIMngr : MonoBehaviour
                 caseFileInstruct = false;
             }
 
-            caseFile.SetActive(!caseFile.active);
-            hud.SetActive(!caseFile.active);
-            if (caseFile.active)
+            caseFile.SetActive(!caseFile.activeSelf);
+            hud.SetActive(!caseFile.activeSelf);
+            crossHair.SetActive(!crossHair.activeSelf);
+            if (caseFile.activeSelf)
             {
                 GameObject.FindWithTag("FPSController").GetComponent<FirstPersonController>().enabled = false;
                 Cursor.lockState = CursorLockMode.None;
@@ -150,6 +157,22 @@ public class UIMngr : MonoBehaviour
             decisionChoice.SetActive(false);
         }
     }
+    public void OpenItemDescription(InventorySlot item)
+    {
+        if(item.IsEmpty())
+            return;
+
+        ItemBase newItem = item.GetItem;
+        itemDescriptionScreen.SetActive(true);
+        itemDescriptionScreen.GetComponent<ItemPanelScript>().ChangePanelContent(newItem.icon,newItem.name,newItem.description);
+       // Debug.Log("LOLLL"+item.GetItem.name);
+    }
+
+    public void CloseItemDescription()
+    {
+        itemDescriptionScreen.SetActive(false);
+    }
+
     //Sets the previous menu visited
     public void SetPrevious(GameObject prev)
     {
@@ -157,7 +180,7 @@ public class UIMngr : MonoBehaviour
     }
     public void ToggleInstructions(GameObject instructions)
     {
-        if (!instructions.active)
+        if (!instructions.activeSelf)
         {
             instructions.SetActive(true);
 
@@ -174,7 +197,7 @@ public class UIMngr : MonoBehaviour
 
     public void TogglecaseFile(GameObject book)
     {
-        if (!book.active)
+        if (!book.activeSelf)
         {
             book.SetActive(true);
             hud.SetActive(false);
@@ -193,6 +216,8 @@ public class UIMngr : MonoBehaviour
         hud.SetActive(true);
         //options.SetActive(false);
         mainMenu.SetActive(false);
+        // enable the crosshair
+        crossHair.SetActive(true);
         //Enable the mouse to be locked
         GameObject.FindWithTag("FPSController").GetComponent<FirstPersonController>().enabled = true;
         // get reference to music manager and switch music loop
@@ -201,7 +226,7 @@ public class UIMngr : MonoBehaviour
 
     public void ToggleCredits(GameObject credits)
     {
-        if (!credits.active)
+        if (!credits.activeSelf)
         {
             credits.SetActive(true);
             mainMenu.SetActive(false);

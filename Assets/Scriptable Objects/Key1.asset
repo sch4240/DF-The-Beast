@@ -14,3 +14,4 @@ MonoBehaviour:
   name: Key_01
   icon: {fileID: 21300000, guid: 9d7c6e4896067aa4fa512a00f692ac1c, type: 3}
   tag: ClueObject
+  description: This is a key

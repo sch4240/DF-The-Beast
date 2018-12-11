@@ -5,6 +5,8 @@ public class InventorySlot : MonoBehaviour {
 
 	public Image icon;
 	ItemBase item;
+
+	public ItemBase GetItem{get{return item;}}
 	
 	// Use this for initialization
 	void Start () {
@@ -14,6 +16,14 @@ public class InventorySlot : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+	}
+
+	public bool IsEmpty()
+	{
+		if(item)
+			return false;
+
+		return true;
 	}
 
 	public void AddItem(ItemBase newItem)
