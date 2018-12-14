@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98c752085f5c1384ab920f0384b4dca4, type: 3}
+  m_Name: Book5
+  m_EditorClassIdentifier: 
+  name: 'Journal Entry #4'
+  icon: {fileID: 21300000, guid: 92bda146147ab60449965f49c4220fca, type: 3}
+  tag: JournalEntry
+  description: "It\u2019s been days since it appeared. I have decided that it is not
+    of this world. I did not think my magic was ever this powerful, but I have truly
+    summoned a demon. Some heartless piece of shit that just won\u2019t leave me alone.
+    The ritual\u2026 I summoned it but I have no idea how to get rid of it. I have
+    been poring over my books trying to figure out what I can do to combat this\u2026
+    thing. First I have to figure out what type of creature it is, but nothing is
+    helping. I think I might have to perform another ritual, but the circle is in
+    the room that I locked and I can\u2019t remember the code! Pages from my journal
+    are missing as well. It was the creature\u2019s doing. I am sure of it. It\u2019s
+    toying with me, trying to make me insane. But i\u2019m not insane. I\u2019m perfectly
+    sane. I won\u2019t let it get to me. I am sane. I am sane. I am sane. I am san.
+    I am sane. I am sane. I am sane. I am sane. I am not insane. I am sane I am sane
+    I am sane I am sane I am sane I am sane I am sane I am sane I am sane I am sane
+    I am sane I am insane I am sane I am sane I am sane I am not sane I am sane I
+    am insane I am not sane I am sane I am sane I am sane I am not sane I am sane
+    I am sane I am sane I am sane. I am sane. I am san. I am sane. I am sane. I am
+    sane. I am sane. I am not insane. I am sane I am sane I am sane I am sane I am
+    sane I am sane I am sane I am sane I am sane I am sane I am sane I am insane I
+    am sane I am sane I am sane I am not sane I am sane I am insane I am not sane
+    I am sane I am sane I am sane I am not sane I am sane I am sane I am sane I am
+    sane. I am sane. I am san. I am sane. I am sane. I am sane. I am sane. I am not
+    insane. I am sane I am sane I am sane I am sane I am sane I am sane I am sane
+    I am sane I am sane I am sane I am sane I am insane I am sane I am sane I am sane
+    I am not sane I am sane I am insane I am not sane I am sane I am sane I am sane
+    I am not sane I am sane I am sane I am sane I am sane. I am sane. I am san. I
+    am sane. I am sane. I am sane. I am sane. I am not insane. I am sane I am sane
+    I am sane I am sane I am sane I am sane I am sane I am sane I am sane I am sane
+    I am sane I am insane I am sane I am sane I am sane I am not sane I am sane I
+    am insane I am not sane I am sane I am sane I am sane I am not sane I am sane
+    I am sane I am sane"
