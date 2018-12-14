@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98c752085f5c1384ab920f0384b4dca4, type: 3}
+  m_Name: Mirror
+  m_EditorClassIdentifier: 
+  name: Mirror
+  icon: {fileID: 21300000, guid: 3462f011295b2b54e8d07e6cdf29986f, type: 3}
+  tag: ClueObject
+  description: There is a mirror in the bathroom where the magic circle is. A possible
+    entrypoint from the Nevernever?

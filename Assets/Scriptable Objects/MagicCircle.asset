@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98c752085f5c1384ab920f0384b4dca4, type: 3}
+  m_Name: MagicCircle
+  m_EditorClassIdentifier: 
+  name: Magic Circle
+  icon: {fileID: 21300000, guid: f49d6e0136b01904eab230c9bc984931, type: 3}
+  tag: ClueObject
+  description: 'There is a broken circle in the bathroom. It seems to be a part of
+    some magical ritual. '

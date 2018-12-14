@@ -9,9 +9,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98c752085f5c1384ab920f0384b4dca4, type: 3}
-  m_Name: Radio1
+  m_Name: Radio
   m_EditorClassIdentifier: 
-  name: 'Radio #1'
-  icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  name: Radio
+  icon: {fileID: 21300000, guid: 93806f36c6956c245997db7f93c9dfa1, type: 3}
   tag: ClueObject
-  description: This is a radio!
+  description: There is some interference on the radio broadcast. Could possibly be
+    due to some spiritual or magical interference.

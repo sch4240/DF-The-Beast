@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98c752085f5c1384ab920f0384b4dca4, type: 3}
+  m_Name: Hairbrush
+  m_EditorClassIdentifier: 
+  name: Hair
+  icon: {fileID: 21300000, guid: fb943a8bc7882c14eae8cf31f2ad1b87, type: 3}
+  tag: ClueObject
+  description: I used some hair from her hairbrush to perform a thaumaturgical spell.
+    I created a psychic link to see what Laura saw before she died. It seems like
+    there were multiple creatures.
