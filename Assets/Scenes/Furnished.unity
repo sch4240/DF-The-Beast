@@ -923,7 +923,7 @@ Transform:
   m_LocalScale: {x: 0.17, y: 1, z: 0.17}
   m_Children: []
   m_Father: {fileID: 433602593}
-  m_RootOrder: 6
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &45871647
 BoxCollider:
@@ -2965,7 +2965,8 @@ GameObject:
   - component: {fileID: 247604827}
   - component: {fileID: 247604826}
   - component: {fileID: 247604825}
-  m_Layer: 0
+  - component: {fileID: 247604828}
+  m_Layer: 9
   m_Name: Photograph (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2978,10 +2979,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 247604823}
-  m_LocalRotation: {x: -0, y: -0.3457894, z: 0, w: -0.93831223}
-  m_LocalPosition: {x: 5.998, y: 1.853, z: -3.258}
-  m_LocalScale: {x: 0.3, y: 0.01, z: 0.4}
+  m_LocalRotation: {x: -0, y: -0.3457894, z: -0, w: -0.93831223}
+  m_LocalPosition: {x: 5.998, y: 1.853, z: -3.2579994}
+  m_LocalScale: {x: 0.3, y: 0.01, z: 0.4000001}
   m_Children:
+  - {fileID: 1359518092}
   - {fileID: 751575008}
   m_Father: {fileID: 433602593}
   m_RootOrder: 0
@@ -3040,6 +3042,22 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 247604823}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &247604828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 247604823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60c179a83a800d5459a4780d5f76ab1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 4
+  interactTransform: {fileID: 247604824}
+  item: {fileID: 11400000, guid: d4e904de0cef1694292f95cb57bbd6a6, type: 2}
+  clue: 1
+  clueString: 
 --- !u!1 &248308182
 GameObject:
   m_ObjectHideFlags: 0
@@ -4219,7 +4237,7 @@ Transform:
   - {fileID: 1516822648}
   - {fileID: 1198461731}
   m_Father: {fileID: 433602593}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &373776902 stripped
 Transform:
@@ -5027,12 +5045,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 247604824}
-  - {fileID: 1359518092}
+  - {fileID: 371259880}
+  - {fileID: 45871646}
   - {fileID: 1223993232}
   - {fileID: 1481297896}
-  - {fileID: 371259880}
   - {fileID: 1322033840}
-  - {fileID: 45871646}
   - {fileID: 928504841}
   - {fileID: 1969567554}
   - {fileID: 1666720442}
@@ -7220,7 +7237,7 @@ MonoBehaviour:
   radius: 3
   interactTransform: {fileID: 608979244}
   item: {fileID: 11400000, guid: 1aab610c2d2b7a6498d3a3552b800705, type: 2}
-  clue: 0
+  clue: 1
   clueString: 
 --- !u!65 &608979246
 BoxCollider:
@@ -7505,7 +7522,7 @@ MonoBehaviour:
   radius: 3
   interactTransform: {fileID: 637229654}
   item: {fileID: 11400000, guid: fb9e72d7cb3ffd247b8d8f9c0b172ff2, type: 2}
-  clue: 0
+  clue: 1
   clueString: 
 --- !u!1001 &639009498
 Prefab:
@@ -8307,7 +8324,7 @@ MonoBehaviour:
   radius: 3
   interactTransform: {fileID: 713520029}
   item: {fileID: 11400000, guid: 5449285d4e1985b469777deb9b38e4a2, type: 2}
-  clue: 0
+  clue: 1
   clueString: 
 --- !u!65 &713520031
 BoxCollider:
@@ -8446,7 +8463,7 @@ GameObject:
   - component: {fileID: 751575011}
   - component: {fileID: 751575010}
   - component: {fileID: 751575009}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8464,7 +8481,7 @@ Transform:
   m_LocalScale: {x: 0.07, y: 1, z: 0.07}
   m_Children: []
   m_Father: {fileID: 247604824}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &751575009
 MeshCollider:
@@ -8474,7 +8491,7 @@ MeshCollider:
   m_GameObject: {fileID: 751575007}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
@@ -8568,7 +8585,7 @@ MonoBehaviour:
   radius: 3
   interactTransform: {fileID: 760486101}
   item: {fileID: 11400000, guid: 67853cdfc9ae00745b0774e691fe1842, type: 2}
-  clue: 0
+  clue: 1
   clueString: 
 --- !u!65 &760486103
 BoxCollider:
@@ -11783,7 +11800,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 398008aaa9b8a2e4ebd3860a13db4038, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 398008aaa9b8a2e4ebd3860a13db4038, type: 2}
@@ -18660,7 +18677,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 8bc0238f058e4164f9eb9123a975cbe6, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 8bc0238f058e4164f9eb9123a975cbe6, type: 2}
       propertyPath: m_LocalScale.y
@@ -19360,7 +19377,7 @@ GameObject:
   - component: {fileID: 1359518095}
   - component: {fileID: 1359518094}
   - component: {fileID: 1359518093}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Photograph (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19373,13 +19390,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1359518091}
-  m_LocalRotation: {x: -0, y: -0.4454169, z: 0, w: -0.89532334}
-  m_LocalPosition: {x: 5.998, y: 1.839, z: -3.2579994}
-  m_LocalScale: {x: 0.3, y: 0.01, z: 0.39999998}
+  m_LocalRotation: {x: -0, y: 0.108346775, z: -0, w: 0.99411315}
+  m_LocalPosition: {x: 0, y: -1.4000058, z: 0}
+  m_LocalScale: {x: 0.98839957, y: 1, z: 1.0154688}
   m_Children:
   - {fileID: 1381150873}
-  m_Father: {fileID: 433602593}
-  m_RootOrder: 1
+  m_Father: {fileID: 247604824}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -307.1, z: 0}
 --- !u!65 &1359518093
 BoxCollider:
@@ -19389,7 +19406,7 @@ BoxCollider:
   m_GameObject: {fileID: 1359518091}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -19713,7 +19730,7 @@ GameObject:
   - component: {fileID: 1381150876}
   - component: {fileID: 1381150875}
   - component: {fileID: 1381150874}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22208,7 +22225,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 83f91ace11852224192baee66fe22f98, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 83f91ace11852224192baee66fe22f98, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -31368,7 +31385,7 @@ MonoBehaviour:
   radius: 3
   interactTransform: {fileID: 2014043161}
   item: {fileID: 11400000, guid: aed11275461540c48b195d27ee1cbeb9, type: 2}
-  clue: 0
+  clue: 1
   clueString: 
 --- !u!65 &2014043163
 BoxCollider:
