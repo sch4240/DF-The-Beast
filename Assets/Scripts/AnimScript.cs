@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AnimScript : MonoBehaviour {
+public class AnimScript : InteractableItemBase {
     private Animation anim;
     public bool ifOpen;
     public float interactDistance = 5.0f;
@@ -22,6 +22,22 @@ public class AnimScript : MonoBehaviour {
         // get reference to Sound Effect Manager
         SEManager = GameObject.FindObjectOfType<SoundEffectManager>();
     }
+
+    public override void Interact()
+    {
+        if(ifOpen)
+        {
+            CloseDoor();
+            ifOpen=false;
+        }
+        else
+        {
+            OpenDoor();
+            ifOpen = true;
+        }
+            
+    }
+
 
 
     public void OpenDoor()
