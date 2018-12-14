@@ -54,7 +54,7 @@ public class UIMngr : MonoBehaviour
     public GameObject decisionInventory;
     public GameObject decisionBestiary;
     public GameObject itemDescriptionScreen;
-
+    public GameObject buttons;
     [Header("CrossHair")]
     public GameObject crossHair;
     public Dictionary<int, string> beastDictionary;
@@ -209,6 +209,16 @@ public class UIMngr : MonoBehaviour
         }
     }
 
+    //this method enables the case panel,
+    public void ToggleinventoryDecision(GameObject inventoryDecision)
+    {
+        caseFile.SetActive(true);
+        buttons.SetActive(false);
+        inventoryDecision.SetActive(true);
+        decisionChoice.SetActive(false);
+        profile.SetActive(false);
+        decisionBestiary.SetActive(false);
+    }
     #region Main Menu
     public void StartGame()
     {
