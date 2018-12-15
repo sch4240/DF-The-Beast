@@ -67,6 +67,10 @@ public class UIMngr : MonoBehaviour
     public GameObject monster;
     private GameObject fpsController;
 
+
+    private bool instructOn;
+    private bool creditsOn;
+
     // on boarding instructions
     bool caseFileInstruct;
     public GameObject caseFileText;
@@ -96,7 +100,8 @@ public class UIMngr : MonoBehaviour
     //check for keypress "c" to open and close the casefile
     public void Update()
     {
-        if (Input.GetKeyDown("c"))
+        if (Input.GetKeyDown("c") && mainMenu.activeSelf == false 
+            && instructOn == false && creditsOn == false)
         {
             // disable text on first time pressing 'C'
             if (caseFileInstruct)
@@ -183,6 +188,7 @@ public class UIMngr : MonoBehaviour
         if (!instructions.activeSelf)
         {
             instructions.SetActive(true);
+            instructOn = true;
 
             if (previous != null)
                 previous.SetActive(false);
@@ -190,6 +196,7 @@ public class UIMngr : MonoBehaviour
         else
         {
             instructions.SetActive(false);
+            instructOn = false;
             if (previous != null)
                 previous.SetActive(true);
         }
@@ -239,11 +246,13 @@ public class UIMngr : MonoBehaviour
         if (!credits.activeSelf)
         {
             credits.SetActive(true);
+            creditsOn = true;
             mainMenu.SetActive(false);
         }
         else
         {
             credits.SetActive(false);
+            creditsOn = false;
             mainMenu.SetActive(true);
         }
     }
