@@ -83,6 +83,8 @@ public class UIMngr : MonoBehaviour
     public GameObject monster;
     private GameObject fpsController;
 
+    private Inventory inventoryInstance;
+
 
     private bool instructOn;
     private bool creditsOn;
@@ -116,6 +118,7 @@ public class UIMngr : MonoBehaviour
         //HR: modify for inventory
         decisionButtons.SetActive(false);
         caseFileInstruct = true;
+        inventoryInstance = Inventory.instance;
 
         //set size of combo array
     }
@@ -327,6 +330,39 @@ public class UIMngr : MonoBehaviour
         crossHair.SetActive(false);
         GameObject.FindWithTag("FPSController").GetComponent<RaycastController>().pressF.enabled = false;
         GameObject.FindWithTag("FPSController").GetComponent<FirstPersonController>().enabled = false;
+    }
+
+    //Displays all the correct evidence at the end of the game
+    public void DisplayCorrectEvidence(Text textArea)
+    {
+        textArea.text = "Evidence leading to the Phobophage:\n";
+        List<ItemBase> items = inventoryInstance.items;
+        Dictionary<string, string> reference = inventoryInstance.correctClueReference;
+        for (int i = 0; i < items.Count; i++)
+        {
+            string name = items[i].name.ToLower();
+            if (reference.ContainsKey(name))
+            {
+                textArea.text += items[i].name + " - " + reference[name] + "\n";
+            }
+        }
+    }
+
+    //Displays all the misleading evidence at the end of the game
+    public void DisplayFalseEvidence(Text textArea)
+    {
+        textArea.text = "Misleading evidence found:\n";
+        List<ItemBase> items = inventoryInstance.items;
+        Dictionary<string, string> reference = inventoryInstance.misleadClueReference;
+
+        for (int i = 0; i < items.Count; i++)
+        {
+            string name = items[i].name.ToLower();
+            if (reference.ContainsKey(name))
+            {
+                textArea.text += items[i].name + " - " + reference[name] + "\n";
+            }
+        }
     }
 
     //which beast did the user pick? Modify the bool array based on button press
