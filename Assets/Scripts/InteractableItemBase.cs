@@ -12,7 +12,7 @@ public class InteractableItemBase : MonoBehaviour {
 	{
 		Debug.Log("Interacting");
 	}
-	private void Update() {
+	protected void Update() {
 		if(isCurrentFocus&& !hasInteracted)
 		{
 			float distance = Vector3.Distance(player.position, interactTransform.position);

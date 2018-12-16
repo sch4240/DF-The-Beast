@@ -57,6 +57,8 @@ public class UIMngr : MonoBehaviour
     public GameObject buttons;
     public GameObject decisionButtons;
 
+    [Header("Lockbox Panel")]
+    public int[] comboNums;
     public GameObject lockPanel;
 
     public GameObject firstNum;
@@ -89,6 +91,8 @@ public class UIMngr : MonoBehaviour
     bool caseFileInstruct;
     public GameObject caseFileText;
 
+    // bool to start countdown timer for when the player gets the right combo for the lockbox
+
     // Use this for initialization
     void Start ()
     {
@@ -112,6 +116,8 @@ public class UIMngr : MonoBehaviour
         //HR: modify for inventory
         decisionButtons.SetActive(false);
         caseFileInstruct = true;
+
+        //set size of combo array
     }
     //check for keypress "c" to open and close the casefile
     public void Update()
@@ -142,6 +148,7 @@ public class UIMngr : MonoBehaviour
             }
 
         }
+  
     }
     //go between profile, inventory and bestiary
     public void ToggleFile(GameObject file)
@@ -391,6 +398,8 @@ public class UIMngr : MonoBehaviour
     {
         journalEntry.SetActive(false);
     }
+
+    #region LockBox Panel
     //lock num increases
     public void IncreaseNum(GameObject text)
     {
@@ -431,7 +440,7 @@ public class UIMngr : MonoBehaviour
         int thirdNumCheck = int.Parse(thirdNum.GetComponent<Text>().text);
         int fourthNumCheck = int.Parse(fourthNum.GetComponent<Text>().text);
         //bool is changed when correct and modify texture
-        if(firstNumCheck == 3 && secondNumCheck == 1 && thirdNumCheck == 1 && fourthNumCheck == 3)
+        if(firstNumCheck == comboNums[0] && secondNumCheck == comboNums[1] && thirdNumCheck == comboNums[2] && fourthNumCheck == comboNums[3])
         {
             incorrect.GetComponent<RawImage>().texture = blackTexture.GetComponent<RawImage>().texture;
             unlockedBox = true;
@@ -447,13 +456,26 @@ public class UIMngr : MonoBehaviour
         incorrect.GetComponent<RawImage>().texture = blackTexture.GetComponent<RawImage>().texture;
 
     }
-    public void ToggleLockedBox(GameObject lockedBox)
+    public void ToggleLockedBoxOff(GameObject lockedBox)
     {
         lockedBox.SetActive(false);
         crossHair.SetActive(true);
         GameObject.FindWithTag("FPSController").GetComponent<RaycastController>().pressF.enabled = true;
         GameObject.FindWithTag("FPSController").GetComponent<FirstPersonController>().enabled = true;
     }
+    public void ToggleLockBoxOn()
+    {
+        lockPanel.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        crossHair.SetActive(false);
+        GameObject.FindWithTag("FPSController").GetComponent<RaycastController>().pressF.enabled = false;
+        GameObject.FindWithTag("FPSController").GetComponent<FirstPersonController>().enabled = false;
+    }
+    // will wait a few seconds before getting rid of the combonation panel
+    // t = time in 
+    #endregion
+
     #region Options Menu
     //Toggles the options menu
     public void ToggleOptions()

@@ -34,3 +34,9 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+Assets/Textures/Thumbs.db
+Assets/Textures/Monsters-Characters/Thumbs.db.meta
+Assets/Materials/magicCircle.mat
+Assets/Textures/Thumbs.db.meta
+Assets/Materials/magicCircle.mat.meta
+Assets/Textures/Monsters-Characters/Thumbs.db

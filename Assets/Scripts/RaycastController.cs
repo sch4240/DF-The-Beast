@@ -22,6 +22,10 @@ public class RaycastController : MonoBehaviour {
 		{
 			FireRaycast();
 		}
+		else
+		{
+			pressF.enabled = false;
+		}
 		
 	}
 	public void FireRaycast()
