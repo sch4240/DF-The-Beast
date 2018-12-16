@@ -9,9 +9,7 @@ TagManager:
   - DiaryEntry
   - Instructions
   - Door
-  - iText
-  - iDescription
-  - iSprite
+  - FrontDoor
   layers:
   - Default
   - TransparentFX

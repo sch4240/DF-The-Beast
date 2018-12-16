@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class RaycastController : MonoBehaviour {
 
@@ -17,7 +18,11 @@ public class RaycastController : MonoBehaviour {
 	}
 
 	private void Update() {
-		FireRaycast();
+		if(GetComponent<FirstPersonController>().enabled == true)
+		{
+			FireRaycast();
+		}
+		
 	}
 	public void FireRaycast()
 	{

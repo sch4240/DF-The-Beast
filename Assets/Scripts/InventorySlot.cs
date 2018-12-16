@@ -33,12 +33,12 @@ public class InventorySlot : MonoBehaviour {
 		icon.enabled = true;
 	}
 
-	public void ClearSlot()
-	{
-		item = null;
+	// public void ClearSlot()
+	// {
+	// 	item = null;
 
-		icon.sprite = null;
-		icon.enabled = false;
-	}
+	// 	icon.sprite = null;
+	// 	icon.enabled = false;
+	// }
 
 }

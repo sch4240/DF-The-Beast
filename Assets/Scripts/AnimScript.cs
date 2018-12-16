@@ -27,15 +27,15 @@ public class AnimScript : InteractableItemBase {
     {
         if(ifOpen)
         {
+            ifOpen = !ifOpen; 
             CloseDoor();
-            ifOpen=false;
         }
         else
         {
+            ifOpen = !ifOpen; 
             OpenDoor();
-            ifOpen = true;
         }
-            
+          
     }
 
 
@@ -43,16 +43,16 @@ public class AnimScript : InteractableItemBase {
     public void OpenDoor()
     {
         anim.Play(animationOpenName);
-        ifOpen = true;
 
         // play sound effect
         SEManager.PlayCreak();
     }
 
+    
+
     public void CloseDoor()
     {
         anim.Play(animationCloseName);
-        ifOpen = false;
 
         // play sound effect
         SEManager.PlayCreak();

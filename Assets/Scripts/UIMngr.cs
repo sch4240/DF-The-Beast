@@ -164,6 +164,7 @@ public class UIMngr : MonoBehaviour
     }
     public void OpenItemDescription(InventorySlot item)
     {
+        
         if(item.IsEmpty())
             return;
 
@@ -267,10 +268,12 @@ public class UIMngr : MonoBehaviour
         if (decision == "Yes")
         {
             decisionScreen.SetActive(true);
-            hud.SetActive(false);
+            //hud.SetActive(false);
         }
         else
         {
+            crossHair.SetActive(true);
+            GameObject.FindWithTag("FPSController").GetComponent<RaycastController>().pressF.enabled = true;
             GameObject.FindWithTag("FPSController").GetComponent<FirstPersonController>().enabled = true;
         }
     }
@@ -278,6 +281,10 @@ public class UIMngr : MonoBehaviour
     public void ToggleLeaving()
     {
         leavePanel.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        crossHair.SetActive(false);
+        GameObject.FindWithTag("FPSController").GetComponent<RaycastController>().pressF.enabled = false;
         GameObject.FindWithTag("FPSController").GetComponent<FirstPersonController>().enabled = false;
     }
     //which beast did the user pick? Modify the bool array based on button press
