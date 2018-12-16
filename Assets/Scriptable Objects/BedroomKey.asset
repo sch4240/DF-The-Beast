@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98c752085f5c1384ab920f0384b4dca4, type: 3}
   m_Name: BedroomKey
   m_EditorClassIdentifier: 
-  name: New Item
-  icon: {fileID: 0}
-  tag: New Tag
-  description: New Description
+  name: Bedroom Key
+  icon: {fileID: 21300000, guid: 17dbce48592fd694a9616f26c35d9197, type: 3}
+  tag: ClueObject
+  description: This is the bedroom key.
