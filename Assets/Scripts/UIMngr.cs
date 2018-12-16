@@ -55,6 +55,7 @@ public class UIMngr : MonoBehaviour
     public GameObject decisionBestiary;
     public GameObject itemDescriptionScreen;
     public GameObject buttons;
+    public GameObject decisionButtons;
     [Header("CrossHair")]
     public GameObject crossHair;
     public Dictionary<int, string> beastDictionary;
@@ -94,7 +95,8 @@ public class UIMngr : MonoBehaviour
         audioOn = true;
         beasts = new bool[7];
         setDictionary();
-
+        //HR: modify for inventory
+        decisionButtons.SetActive(false);
         caseFileInstruct = true;
     }
     //check for keypress "c" to open and close the casefile
@@ -148,6 +150,7 @@ public class UIMngr : MonoBehaviour
         }
         else if (file.name == "DecisionChoice")
         {
+            decisionScreen.SetActive(true);
             decisionInventory.SetActive(false);
             decisionBestiary.SetActive(false);
         }
@@ -158,6 +161,7 @@ public class UIMngr : MonoBehaviour
         }
         else if (file.name == "DecisionBestiary")
         {
+            decisionScreen.SetActive(true);
             decisionInventory.SetActive(false);
             decisionChoice.SetActive(false);
         }
@@ -217,7 +221,7 @@ public class UIMngr : MonoBehaviour
         }
     }
 
-    //this method enables the case panel,
+    //this method enables the inventory panel in the decision panel
     public void ToggleinventoryDecision(GameObject inventoryDecision)
     {
         caseFile.SetActive(true);
@@ -225,7 +229,11 @@ public class UIMngr : MonoBehaviour
         inventoryDecision.SetActive(true);
         decisionChoice.SetActive(false);
         profile.SetActive(false);
+        bestiary.SetActive(false);
+        //disable the panel above the inventory
         decisionBestiary.SetActive(false);
+        decisionScreen.SetActive(false);
+        decisionButtons.SetActive(true);
     }
     #region Main Menu
     public void StartGame()
@@ -268,6 +276,7 @@ public class UIMngr : MonoBehaviour
         if (decision == "Yes")
         {
             decisionScreen.SetActive(true);
+            decisionButtons.SetActive(true);
             //hud.SetActive(false);
         }
         else
@@ -334,6 +343,7 @@ public class UIMngr : MonoBehaviour
         changeImage();
         decisionScreen.SetActive(false);
         winScreen.SetActive(true);
+        decisionButtons.SetActive(false);
     }
     //modify the texture to the chosen monster's image
     public void changeImage()
