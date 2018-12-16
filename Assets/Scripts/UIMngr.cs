@@ -56,6 +56,19 @@ public class UIMngr : MonoBehaviour
     public GameObject itemDescriptionScreen;
     public GameObject buttons;
     public GameObject decisionButtons;
+
+    public GameObject lockPanel;
+
+    public GameObject firstNum;
+    public GameObject secondNum;
+    public GameObject thirdNum;
+    public GameObject fourthNum;
+    public bool unlockedBox;
+    public GameObject incorrect;
+    public GameObject correct;
+    public GameObject incorrectTexture;
+    public GameObject correctTexture;
+    public GameObject blackTexture;
     [Header("CrossHair")]
     public GameObject crossHair;
     public Dictionary<int, string> beastDictionary;
@@ -93,6 +106,7 @@ public class UIMngr : MonoBehaviour
         decisionScreen.SetActive(false);
         itemDescriptionScreen.SetActive(false);
         audioOn = true;
+        unlockedBox = false;
         beasts = new bool[7];
         setDictionary();
         //HR: modify for inventory
@@ -296,6 +310,18 @@ public class UIMngr : MonoBehaviour
         GameObject.FindWithTag("FPSController").GetComponent<RaycastController>().pressF.enabled = false;
         GameObject.FindWithTag("FPSController").GetComponent<FirstPersonController>().enabled = false;
     }
+
+    //if the user clicks on the locked box, pull up the locked panel
+    public void LockedPanel()
+    {
+        lockPanel.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        crossHair.SetActive(false);
+        GameObject.FindWithTag("FPSController").GetComponent<RaycastController>().pressF.enabled = false;
+        GameObject.FindWithTag("FPSController").GetComponent<FirstPersonController>().enabled = false;
+    }
+
     //which beast did the user pick? Modify the bool array based on button press
     public void setBeast(int num)
     {
@@ -365,6 +391,69 @@ public class UIMngr : MonoBehaviour
     {
         journalEntry.SetActive(false);
     }
+    //lock num increases
+    public void IncreaseNum(GameObject text)
+    {
+        int lockText = int.Parse(text.GetComponent<Text>().text);
+
+        if (lockText >= 0 && lockText != 9)
+        {
+            lockText++;
+        }
+        else
+        {
+            lockText = 0;
+        }
+
+        text.GetComponent<Text>().text = lockText.ToString();
+    }
+    //lock num decreases
+    public void DecreaseNum(GameObject text)
+    {
+        int lockText = int.Parse(text.GetComponent<Text>().text);
+
+        if (lockText <= 9 && lockText != 0)
+        {
+            lockText--;
+        }
+        else
+        {
+            lockText = 9;
+        }
+
+        text.GetComponent<Text>().text = lockText.ToString();
+    }
+    //checks if the numbers are correct to unlock the lock box
+    public void checkLock()
+    {
+        int firstNumCheck = int.Parse(firstNum.GetComponent<Text>().text);
+        int secondNumCheck = int.Parse(secondNum.GetComponent<Text>().text);
+        int thirdNumCheck = int.Parse(thirdNum.GetComponent<Text>().text);
+        int fourthNumCheck = int.Parse(fourthNum.GetComponent<Text>().text);
+        //bool is changed when correct and modify texture
+        if(firstNumCheck == 3 && secondNumCheck == 1 && thirdNumCheck == 1 && fourthNumCheck == 3)
+        {
+            incorrect.GetComponent<RawImage>().texture = blackTexture.GetComponent<RawImage>().texture;
+            unlockedBox = true;
+            correct.GetComponent<RawImage>().texture = correctTexture.GetComponent<RawImage>().texture;
+        }
+        else
+        {
+            incorrect.GetComponent<RawImage>().texture = incorrectTexture.GetComponent<RawImage>().texture;
+        }
+    }
+    public void turnOffIncorrectCircle()
+    {
+        incorrect.GetComponent<RawImage>().texture = blackTexture.GetComponent<RawImage>().texture;
+
+    }
+    public void ToggleLockedBox(GameObject lockedBox)
+    {
+        lockedBox.SetActive(false);
+        crossHair.SetActive(true);
+        GameObject.FindWithTag("FPSController").GetComponent<RaycastController>().pressF.enabled = true;
+        GameObject.FindWithTag("FPSController").GetComponent<FirstPersonController>().enabled = true;
+    }
     #region Options Menu
     //Toggles the options menu
     public void ToggleOptions()
@@ -404,7 +493,7 @@ public class UIMngr : MonoBehaviour
 
     
     #endregion
-
+    
     public void QuitGame()
     {
 #if UNITY_EDITOR
