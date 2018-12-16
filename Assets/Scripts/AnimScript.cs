@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AnimScript : InteractableItemBase {
-    private Animation anim;
+    protected Animation anim;
     public bool ifOpen;
-    public float interactDistance = 5.0f;
 
     // name of animation
     public string animationOpenName;
@@ -15,7 +14,7 @@ public class AnimScript : InteractableItemBase {
     SoundEffectManager SEManager;
 
     // Use this for initialization
-    void Start ()
+    protected void Start ()
     {
         anim = GetComponent<Animation>();
 
@@ -40,6 +39,8 @@ public class AnimScript : InteractableItemBase {
 
 
 
+
+
     public void OpenDoor()
     {
         anim.Play(animationOpenName);
@@ -57,4 +58,5 @@ public class AnimScript : InteractableItemBase {
         // play sound effect
         SEManager.PlayCreak();
     }
+
 }

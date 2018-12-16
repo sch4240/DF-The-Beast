@@ -43,4 +43,17 @@ public class Inventory : MonoBehaviour {
 
 		return false;
 	}
+
+	public bool CheckForItem(string n)
+	{
+		if(items.Count<=0)
+			return false;
+			
+		for(int i=0;i<items.Count;i++)
+		{
+			if(items[i].name == n)
+				return true;
+		}
+		return false;
+	}
 }
